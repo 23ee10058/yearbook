@@ -1,0 +1,26 @@
+
+.yearbook_bg{
+  width: 100vw;
+  
+  height: 99.7vh;
+  
+background-color: rgb(188, 160, 215);
+ position: fixed;
+ transform: translate(0,-364px);
+ padding: 0;
+ margin: 0;
+ border: 1px solid;
+ 
+  
+}
+@media (max-width:768px){
+  .yearbook_bg{
+    transform: translate(0,-510px);
+  }
+}
+@media (max-width:468px){
+  .yearbook_bg{
+    width: 100vw;
+    height: 990px;
+  }
+}

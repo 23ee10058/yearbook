@@ -1,0 +1,159 @@
+.navbar{
+    width: 100vw;
+    
+    height: 60px;
+    border: 1px solid;
+    
+    position: sticky;
+    background-color:  rgb(102,51,153);
+    display: flex;
+    align-content: center;
+    cursor:pointer ;
+    justify-content: space-evenly;
+    z-index: 3;
+    top: 33.1px;
+    /* transform: translate(-768px,-365px); */
+}
+.logo_title{
+    display: flex;
+    
+    width: 20vw;
+}
+.title{
+    transform: translate(20px,20px);
+   
+        font-family: sans-serif;
+        font-weight: 700;
+        color: yellow;
+        font-style: normal;
+      
+      
+}
+.logo{
+    color: white;
+}
+.navbar_icons{
+    width: 48vw;
+    
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+.icon{
+    width: 8vw;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    
+    align-items: center;
+    align-content: center;
+}
+.icon:hover{
+    background-color: rgb(187, 131, 243);
+    color: yellow;
+}
+#search{
+    display: flex;
+    color: white;
+    align-items: center;
+    font-size: 18px;
+    justify-content: space-evenly;
+    
+    border-radius: 20px;
+    width: 6vw;
+}
+.search{
+    font-size: 20px;
+}
+#search:hover{
+    background-color: rgb(187, 131, 243);
+    color: yellow;
+}
+.profile_icons{
+    
+    width: 18vw;
+    display: flex;
+}
+.bell_icon{
+    border-radius: 20px;
+    width: 6vw;
+    text-align: center;
+   font-size: 23px;
+    align-content: center;
+    color: white;
+}
+.bell_icon:hover{
+    background-color: rgb(187, 131, 243);
+    color: yellow;   
+}
+.profile{
+    border-radius: 20px;
+    align-content: center;
+    width: 6vw;
+    font-size: 23px;
+    
+    color: white;
+}
+#profile{
+    transform: translate(30px);
+}
+.profile:hover{
+    background-color: rgb(187, 131, 243);
+    color: yellow;
+}
+@media (max-width:768px){
+    .navbar{
+        width: 100vw;
+        font-size: 10px;
+    }
+    
+    .icon{
+        font-size: 10px;
+    }
+    .search{
+        font-size: 10px;
+    }
+    #search{
+        font-size: 10px;
+    }
+    .bell_icon{
+        font-size: 13px;
+    }
+    .profile{
+        font-size: 15px;
+        text-align: center;
+    }
+    #profile{
+      transform: translate(-0px);
+    }
+}
+@media (max-width:468px){
+    .navbar{
+        width: 100vw;
+        position: relative;
+        transform: translate(0,30px);
+        font-size: 10px;
+    }
+    .icon{
+        font-size: 8px;
+    }
+    .title{
+        font-size: 7px;
+        position: relative;
+        left: -10px;
+        bottom: -5px;
+    }
+    .navbar_icons{
+        position: relative;
+        left: 5px;
+       
+    }
+    .bell_icon{
+        font-size: 10px;
+    }
+    .profile{
+        font-size: 10px;
+    }
+    
+}
