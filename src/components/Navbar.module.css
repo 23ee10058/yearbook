@@ -5,14 +5,32 @@
     border: 1px solid;
     
     position: sticky;
-    background-color:  rgb(102,51,153);
+    background-color:  rgb(25,55,109);
     display: flex;
     align-content: center;
     cursor:pointer ;
     justify-content: space-evenly;
     z-index: 3;
+    animation-name: animated;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
     top: 33.1px;
     /* transform: translate(-768px,-365px); */
+}
+@keyframes animated{
+    0%{
+       border-bottom: 3px solid red;
+    }
+    25%{
+       border-bottom: 3px solid green;
+    }
+    50%{
+       border-bottom: 3px solid aqua;
+    }
+    100%{
+       border-bottom: 3px solid yellow;
+    }
 }
 .logo_title{
     display: flex;
@@ -20,15 +38,17 @@
     width: 20vw;
 }
 .title{
-    transform: translate(20px,20px);
+    transform: translate(20px,10px);
    
-        font-family: sans-serif;
-        font-weight: 700;
-        color: yellow;
-        font-style: normal;
+    font-family: 'Baloo 2';
+        font-weight: 1000;
+        color: rgb(165,215,232);
+        font-size: 25px;
       
       
 }
+
+
 .logo{
     color: white;
 }
@@ -42,10 +62,13 @@
 .icon{
     width: 8vw;
     color: white;
+    height: 70%;
     font-size: 16px;
     border-radius: 20px;
     font-family: sans-serif;
-    
+    padding: 5px;
+    margin: 5px;
+    transform: translate(-80px,0px);
     align-items: center;
     align-content: center;
 }
@@ -63,97 +86,210 @@
     border-radius: 20px;
     width: 6vw;
 }
-.search{
+#search input{
+    height: 30px;
+    width: 130px;
+    transform-origin: left;
+    border: none;
+    border-radius: 10px;
+    color: slategrey;
     font-size: 20px;
+    font-family: sans-serif;
 }
-#search:hover{
-    background-color: rgb(187, 131, 243);
-    color: yellow;
+#search input:focus{
+    outline: none;
+    border: none;
 }
+#search input::placeholder{
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.tri_bar{
+    display: none;
+    color: white;
+}
+
+
 .profile_icons{
-    
-    width: 18vw;
+    position: relative;
+    left: -100px;
+    width: 10vw;
+    justify-content: space-between;
     display: flex;
+}
+.profile_icons div{
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    left: -19px;
+}
+#menu{
+    display: none;
+}
+.items{
+    display: none;
 }
 .bell_icon{
     border-radius: 20px;
-    width: 6vw;
+   transform: translate(40px);
     text-align: center;
    font-size: 23px;
     align-content: center;
     color: white;
 }
-.bell_icon:hover{
-    background-color: rgb(187, 131, 243);
-    color: yellow;   
-}
+
 .profile{
     border-radius: 20px;
     align-content: center;
-    width: 6vw;
+    transform: translate(40px);
     font-size: 23px;
     
     color: white;
 }
 #profile{
-    transform: translate(30px);
+    position: relative;
+    left: 30px;
+    text-align: center;
+
 }
-.profile:hover{
-    background-color: rgb(187, 131, 243);
-    color: yellow;
+
+.data{
+    position: relative;
+    bottom: 20px;
+    border: 1px solid;
 }
-@media (max-width:768px){
-    .navbar{
-        width: 100vw;
-        font-size: 10px;
-    }
+.modeChange{
+   transform: translate(733px,6px);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
     
-    .icon{
-        font-size: 10px;
+    padding: 5px;
+  }
+@media (max-width:426px){
+    .navbar{
+       width: 425px;
+       background-color: rgb(25,55,109);
+       transform: translate(-3px,0px);
+       height: 47px;
     }
-    .search{
-        font-size: 10px;
+    .icon{
+        display: none;
     }
     #search{
-        font-size: 10px;
+        display: none;
     }
-    .bell_icon{
-        font-size: 13px;
+    .tri_bar{
+      display: flex;
+        font-size: 26px;
+       position: fixed;
+       bottom: 5px;
+       left: 20px;
+        color: white;
     }
-    .profile{
-        font-size: 15px;
+    .logo{
+        height: 30px;
         text-align: center;
-    }
-    #profile{
-      transform: translate(-0px);
-    }
-}
-@media (max-width:468px){
-    .navbar{
-        width: 100vw;
         position: relative;
-        transform: translate(0,30px);
-        font-size: 10px;
-    }
-    .icon{
-        font-size: 8px;
+        bottom: -10px;
     }
     .title{
-        font-size: 7px;
         position: relative;
-        left: -10px;
-        bottom: -5px;
+        bottom: 10px;
+
+        color: rgb(165, 215,232);
     }
-    .navbar_icons{
-        position: relative;
-        left: 5px;
-       
+    .logo_title{
+        position: fixed;
+        left: 100px;
+        text-align: center;
+        font-size: 23px;
+        font-family: Ballo;
+
     }
     .bell_icon{
-        font-size: 10px;
+        position: fixed;
+        bottom: -3px;
+        left: 320px;
+       font-size: 25px;
     }
     .profile{
-        font-size: 10px;
+        position: fixed;
+        bottom: -2px;
+        
+        align-items: center;
+        text-align: center;
+        left: 365px;
+        font-size: 25px;
     }
+    #photo{
+        position: relative;
+        bottom: 19px;
+    }
+    .side_bar{
+        color: white;
+       
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        bottom: -47px;
+        height: 792px;
+        background-color: rgb(25,55,109);
+    }
+
+    #menu{
+        width: 250px;
+        margin: 15px;
+        display: flex;
+        padding: 10px;
+    }
+    .items{
+        width: 250px;
+        height: 30px;
+        display: flex;
+        position: relative;
+        
+        text-align: center;
+        font-size: 22px;
+        position: relative;
+        bottom: 39px;
+        font-family: sans-serif;
+        padding: 10px;
+        left: 30px;
+        text-align: left;
+       
+    }
+    .items:hover{
+         color: rgb(165, 215,232);
+         border-left: 5px solid rgb(165, 215,232);
+    }
+    #home{
+      position: relative;
+      bottom: 29px;
+    }
+    #trend{
+      position: relative;
+      bottom: 81px;
+    }
+    #fill{
+       transform: translateY(-95px);
+    }
+    #view{
+        transform: translateY(-149px);
+     }
+    #testimonial{
+        transform: translateY(-202px); 
+    }
+    #polls{
+        transform: translateY(-254px);
+    }
+    .modeChange{
+        transform: translate(190px);
+    }
+}
+@media (max-width:768px) and (min-width:426px){
     
 }

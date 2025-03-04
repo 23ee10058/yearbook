@@ -1,270 +1,291 @@
-.container{
+.super_container{
+    background-color: rgb(25,55,109);
+   
     width: 80vw;
-    height: 280px;
-    display: block;
-    transform: translate(20px,20px);
-    border-radius: 30px;
-    align-content: center;
+    transform: translate(150px,40px);
+    height: 95vh;
+    position: fixed;
+   justify-content: center;
+    z-index: 3;
+    padding: 15px;
+    transition: all 2s ease;
+    border-radius: 15px;
+    transition: 3s all ease-in-out;
+    
+    
+}
+.super_container.sup_light{
+   background-color: rgb(25,55,109,0.5);
+   color: black;
+ 
+}
+.container.container_light{
+   background-color: rgba(24,18,43,0.2);
+}
+.container{
+    height: 300px;
+    background-color: rgba(24,18,43,.62);
+    width: 98%;
+    position: fixed;
+    left: 11px;
+    bottom: 410px;
+    display: flex;
+    border-radius: 15px;
+}
+.photo img{
+    width: 24vw;
+    border-radius: 15px 0 0 15px;
+    height: 300px;
+    clip-path: polygon(0 0,24vw 0,300px 21vw,0 300px);
+}
+.info{
+   width: 100%;
+
+   display: flex;
+   border-radius: 15px;
    
 }
-
-
-.info{
-    
-    
-
-    height: 280px;
-    background-color:  rgba(25, 2, 47,0.99);
-    width: 65vw;
-    flex-grow: 1;
-    position: fixed;
-    transform: translate(210px,-280px);
-    border-radius: 0  30px 30px 0;
-    display: flex;
-    justify-content: space-evenly;
-    clip-path: polygon(100px 0,100% 0,100% 100%,0 100%);
-}
-
-.photo{
-    width: 27vw;
-    height: 100%;
-}
-#photo{
-    size: cover;
-    width: 27vw ;
-    height: 100%;
-    border-radius: 30px;
-}
-.tilt_line{
-    left: 190px;
-    bottom: 10px;
-    border: 3px solid yellow;
-    width: 1px ;
-    background-color: yellow;
-    height: 276px;
-    transform: rotate(19.6deg);
-    position: fixed;
-      
-}
-.super_container{
-    height: 89vh;;
-    width: 81vw;
-    background-color:  rgba(25, 2, 47,0.7);
-    transform: translate(140px,20px);
-    border: 1px solid;
-    border-radius: 30px 30px 0 0;
-    
-}
-
-.name_caption{
-    color: white;
-    font-family: sans-serif;
-    
-}
-.profile{
- 
-    width: 30vw;
-    color: yellow;
-    font-size: 19px;
+.caption{
+   text-align: center;
+   width: 20vw;
+   color: white;
+   font-family: sans-serif;
 }
 .bio{
-    display: flex;
-    justify-content: space-between;
-    transform: translate(0,-19px);
-    box-sizing: border-box;
-    flex-wrap: wrap;
-   height: 30px;
-    margin: 10px;
+   transform: translate(41px);
+   width: 33vw;
+   
+   
 }
-.icon{
-    color: yellow;
-    size: 30px;
-
-    transform: translate(-10px,15px);
+.bio span span{
+     margin-right: 10px;
+     font-size: 25px;
+     position: relative;
+     bottom: -6px;
+     text-align: center;
 }
-.edit{
-    background-color: orange;
-    font-size: 16px;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    transform: translate(0,5px);
-    
-    height: 30px;
-    font-family: sans-serif;
+.bio span span b{
+   color: rgb(148,148,148)
 }
-
-.edit:hover{
+.bio span{
+   color: rgb(165,215,232);
    font-size: 18px;
+   position: relative;
+   bottom: 5px;
 }
-.write_testimonial{
-    width: 200px;
-    height: 30px;
-    border: 1px solid ;
-    text-align: center;
-    align-self: center;
-    background-color: orange;
-    color: whitesmoke;
-    font-size: 20px;
-    border-radius: 30px;
-    font-family: sans-serif;
-    cursor: pointer;
-    transform: translate(500px,20px);
+.bio h3{
+   color: rgb(165,215,232);
 }
-.para{
-    color: whitesmoke;
-    transform: translate(50px,10px);
+.bio p{
+   margin: 10px;
 
+}
+.bio input{
+   font-size: 15px;
+   width: 120px;
+   padding: 8px;
+   margin: 5px;
+   border-radius: 15px;
+   font-weight: 500;
+   cursor: pointer;
+   background-color: rgb(165,215,232);
+   border: none;
+   transform: translate(300px);
+
+}
+.bio input:hover{
+   background-color: #1877f2;
+   color: white;
+}
+.super_container h4{
+   color: white;
+   font-family: sans-serif;
+   font-size: 16px;
+   text-align: center;
+   font-weight: 400;
+   position: fixed;
+   bottom: 324px;
 }
 .triple_option{
-    display: flex;
-    border: 4px solid orange;
-    justify-content: space-between;
-    width: 76vw;
-    color: white;
-    transform: translate(19px);
-    border-radius: 20px;
-}
-.option{
-    width: 23vw;
-    font-size: 18px;
-     padding: 5px;
-     text-align: center;
-     margin: 7px;
-     border-radius: 20px;
-     cursor: pointer;
-}
-.option:hover{
-    background-color: orange;
-}
-.data{
-    display: flex;
+   width: 90%;
+   height: 20px;
+   display:flex ;
+   border: 4px solid rgb(165,215,232);
    
-    height: 40px;
-    text-align: center;
-    align-content: center;
-    width: 400px;
-    justify-content: space-between;
-
+    position: fixed;
+    margin: 10px;
+    left: 40px;
+    bottom: 260px;
+    padding: 13px;
+    border-radius: 28px;
+    justify-content: space-around;
 }
-
-
-@media (max-width:768px){
-    .super_container{
-        transform: translate(40px,20px);
-        border-radius: 30px;
-        width: 89vw;
-    }
-    .container{
-        width: 70vw;
-    }
-    #photo{
-        height: 260px;
-        width: 300px;
-        border-radius:30px 0px 0 30px ;
-    }
-    .info{
-        height: 260px;
-        transform: translate(146px,-280px);
-    }
-    .name_caption{
-        font-size: 8px;
-        position: relative;
-        left: 40px;
-        bottom: -20px;
-    }
-    .profile{
-        font-size: 10px;
-        position: relative;
-        left: 5px;
-    }
-    .write_testimonial{
-        position: relative;
-        transform: translate(220px);
-
-    }
-    .profile p{
-         transform: translate(10px);
-    }
-    #intro{
-        transform: translate(30px);
-    }
-    .data{
-        display: flex;
-        justify-content: space-between;
-        
-    
-        float: left;
-        position: relative;
-        left: 0px;
-        bottom: -10px;
-        text-align: center;
-        float: inline-end;
-        width: 180px;
-    
-    }
-    .edit{
-        transform: translate(70px,20px);
-    }
-}
-@media (max-width:468px){
-    .super_container{
-        width: 89vw;
-        position: relative;
-        left: -20px;
-        bottom: -60px;
-    }
-    #photo{
-        height: 260px;
-        width: 180px;
-        position: relative;
-        left: -20px;
-        bottom: 21px;
-    }
-    .name_caption{
-        position: relative;
-        left: 60px;
-    }
+.triple_option p{
+  
+   padding: 4px;
+   width: 30%;
+   position: relative;
+   bottom: 28.6px;
+   color: white;
+   border-radius: 28px;
+   height: 30px;
+   text-align: center;
+   font-size: 19px;
+   cursor: pointer;
    
-    .info{
-        height: 260px;
-        position: relative;
-        width: 69vw;
-        bottom: 20px;
-        left: -85px;
-    }
-    .name_caption{
-        font-size: 4px;
-    }
-    .profile{
-        font-size: 8px;
-        transform: translate(20px);
-    }
-    .icon{
-       font-size: 13px;
-    }
-    .bio{
-        width: 20vw;
+}
+.triple_option p:hover{
+   background-color: rgb(165,215,232);
+   color: black;
+}
+form{
+   color: white;
+   position: fixed;
+   left: 200px;
+   display: grid;
+   flex-wrap: wrap;
+   grid-template-columns: 200px 400px ;
+   
+   
+  
+   width: 600px;
+   height: 500px;
+   grid-template-columns: auto;
+   background-color: rgb(11,36,71);
+   z-index: 5;
+}
+form h3{
+   width: 600px;
+   height: 20px;
+   margin: 20px;
+   color: rgb(165,215,232);
+   font-family: sans-serif;
+}
+form p{
+   
+   margin: 4px;
+   margin-left: 50px;
+   
+  border: 1px solid;
+   font-family: sans-serif;
+   font-weight: 500;
+   position: relative;
+   bottom: 45px;
+}
+table h3{
+   width: 200px;
+   height: 20px;
+   margin: 20px;
+   color: rgb(165,215,232);
+   font-family: sans-serif;
+}
+table tr{
+   position: relative;
+   left: 46px;
+   bottom: 10px;
+   color: white;
+   border: 1px solid;
+   margin: 10px;
+   width: 200px;
+  
+   font-size: 18px;
+   font-family: sans-serif;
+  
+}
+table tr td{
+   margin: 5px;
+}
+table {
+   width: 600px;
+   z-index: 5;
+   background-color: #0B2447;
+   border-radius: 15px;
+   border: 2px solid white;
+   height: 400px;
+   position: relative;
+   left: 300px;
+   bottom: -10px;
+   row-gap: 20px;
+   column-gap: 0;
+   column-width: 200px;
+   
+   
+}
+table tr td input{
+   border: none;
+   height: 20px;
+   padding: 10px;
+   margin: 5px;
+   font-size: 18px;
+   background-color: transparent;
+   color: #949494;
+}
+table tr td input:focus{
+   border: none;
+   outline: none;
+}
+table input[type="button"] {
+   font-size: 20px;
+   width: 100px;
+   height: 36px;
+   justify-content: center;
+   position: relative;
+   left: 430px;
+   background-color: rgb(165,215,232);
+   border-radius: 15px;
+   text-align: center;
+   margin: 10px;
+}
+table input[type="button"]:hover{
+   background-color:#1877f2;
+   color: white;
+}
+/* Initially, table is hidden with opacity 0 and transformed */
+.table {
+   opacity: 1;
+   transform: translateY(-20px); /* Move the table slightly up */
+   transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for opacity and transform */
+ }
+ 
+ /* When the table becomes visible, it will transition to normal state */
+ .show {
+   opacity: 1;
+   transform: translateY(0); /* Bring the table back to its original position */
+ }
+ table input[type="file"]:focus-within{
+     font-family: sans-serif;
+ }
 
-    }
-    .data{
-        transform: translate(0,-15px);
-    }
-    .edit{
-        transform: translate(20px,25px);
-    }
-    .write_testimonial{
-        left: -150px;
-        bottom: 280px;
-    }
-    .para{
-        position: relative;
-        bottom: 280px;
-        left: -20px;
-    }
-    .triple_option{
-        position: relative;
-        bottom: 260px;
-        left: -16px;
-    }
+ @media (max-width:426px){
+   .super_container{
+      /* transform: translate(25px,100px);
+      transition: none; */
+      display: none;
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animated{
+     0%{
+        border: 3px solid red;
+     }
+     25%{
+        border: 3px solid green;
+     }
+     50%{
+        border: 3px solid aqua;
+     }
+     100%{
+        border: 3px solid yellow;
+     }
 }

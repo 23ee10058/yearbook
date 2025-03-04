@@ -4,23 +4,70 @@
   
   height: 99.7vh;
   
-background-color: rgb(188, 160, 215);
+background-color: rgb(11,36,71);
  position: fixed;
  transform: translate(0,-364px);
  padding: 0;
+ transition: 1s all ease;
  margin: 0;
  border: 1px solid;
- 
+ justify-content: center;
   
+} 
+.light{
+  background-color: rgb(157,203,224);
 }
-@media (max-width:768px){
+.modeChange{
+  transform: translate(1460px,5px);
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  position: fixed;
+  cursor: pointer;
+  
+  padding: 5px;
+}
+#dark{
+  z-index:5;
+  background-color: white;
+ transform: translate(0,40px);
+ transform: translate(-3.2px,-20px);
+ border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  padding:5px ;
+  position: fixed;
+}
+#light{
+  position: fixed;
+ transform: translate(0,40px);
+  background-color: rgba(0, 0, 0,1);
+  border-radius: 10px;
+  transform: translate(-20px,-20px);
+  width: 30px;
+  padding: 5px;
+  height: 30px;
+  text-align: center;
+}
+@media (max-width:426px){
   .yearbook_bg{
-    transform: translate(0,-510px);
+    width: 425px;
+    background-color: rgb(11, 36, 71);
+    position: relative;
+    bottom: -364px;
+    height: 839px;
   }
 }
-@media (max-width:468px){
+@media (max-width:768px) and (min-width:426px){
   .yearbook_bg{
-    width: 100vw;
-    height: 990px;
+    transform: translate(-0px,-420px);
+    width: 768px;
+   
+  }
+}
+@media (min-width:1440px){
+  .yearbook_bg{
+    position: fixed;
+    
   }
 }
